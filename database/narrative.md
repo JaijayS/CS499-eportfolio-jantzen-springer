@@ -1,7 +1,5 @@
 # Milestone Four: Enhancement Three - Databases
 
-# DriverPass – Database Enhancement Narrative
-
 ## 1. What is the artifact? When was it created?
 
 This artifact is the backend system of my **DriverPass web application**. It was originally built during **CS-255: System Analysis & Design** and later expanded during the **CS-499 Capstone** course.

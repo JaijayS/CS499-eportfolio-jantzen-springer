@@ -1,54 +1,112 @@
 # Milestone Four: Enhancement Three - Databases
 
-## 1. Artifact Overview
+# DriverPass – Database Enhancement Narrative
 
-This artifact is the backend system for a project titled **DriverPass**, built using **Java Spring Boot** and **MySQL**. The system supports a driving school platform and handles everything from user registration, course enrollment, and vehicle checkout to teacher evaluations and student progress tracking. It was originally created in **CS-255: System Analysis & Design** and expanded in this capstone with a focus on **database integration** and **backend logic**.
+## 1. What is the artifact? When was it created?
 
-As part of the database enhancement, I cleaned up and normalized relationships between entities, added `CourseOutcome` and `Appointment` tables, and built out the logic to store and retrieve dynamic, real-world data (like enrollments, test results, and appointments). I also made sure the data flows cleanly from the backend into the frontend views, so things like completed courses, appointment history, and student-teacher interactions all update live from the database.
+This artifact is the backend system of my **DriverPass web application**. It was originally built during **CS-255: System Analysis & Design** and later expanded during the **CS-499 Capstone** course.
 
-With this updated setup, the system now reflects real workflows used in actual driving schools and supports more complex use cases while staying organized, relational, and scalable.
+It simulates the backend operations of a driving school, including:
 
----
+- Account registration  
+- Course scheduling  
+- Student evaluations  
+- Vehicle checkout  
 
-## 2. Justification for Inclusion
+The system is built using **Java Spring Boot** and **MySQL**.
 
-I picked this artifact because it shows what I can do when it comes to building a **real backend with a working database** behind it. It started out as a basic setup but became something much more detailed, with full relational logic and real user interaction.
+Initially, the project functioned more like a prototype. As part of this enhancement, I:
 
-### Improvements that Show My Database Work:
-- **Entity Relationships**: Students, teachers, and courses are all connected using proper JPA annotations, and relationships are set up as many-to-many or one-to-many where needed.
-- **CourseOutcome Table**: I replaced a few scattered booleans with a dedicated outcome model to track whether a student passed or failed a course. It’s cleaner and more flexible.
-- **Live Student and Teacher Dashboards**: I added service methods (`findCoursesByStudent`, `findCoursesNotEnrolledByStudent`, `findByTeacher`) to give each user role their own data pulled from the DB. So students only see courses they’re in or can join, and teachers only see their students and appointments.
-- **DTOs and Repositories**: I used DTOs to keep the controller data clean, and custom repo methods to return the right data without hardcoding logic into the views.
-- **Form Handling and Data Storage**: The forms on the site (scheduling appointments, checking course progress, enrolling in classes) all save their results straight into the relational database and reflect changes immediately.
-- **Seeding and Sample Data**: I created realistic test data to work with and validate that the logic, especially with enrollment, vehicles, and course outcomes, actually holds up.
+- Redesigned the database schema to reflect real-world workflows
+- Added new tables such as `CourseOutcome` and `Appointment`
+- Restructured backend logic to support dynamic updates
+- Ensured smooth, two-way communication between the frontend and backend
 
-The end result is a **real backend** with logic that supports student tracking, role-based dashboards, evaluations, and more — all through a clean **MySQL schema** and **Spring JPA**.
-
----
-
-## 3. Course Outcome Alignment
-
-Yes — and then some. I initially planned to clean up a few database issues and maybe add one or two new entities. But I ended up going further by:
-
-- Adding a full `CourseOutcome` system to record pass/fail decisions
-- Creating appointment tracking with cancel/reschedule support
-- Reworking how courses connect to users so that everything is handled through real-time database-driven logic
-- Updating the `StudentController` and `TeacherController` so they return only the relevant courses and appointments tied to that logged-in user
-- Expanding `CourseService` to let me grab only the courses a student is in or not in, which makes the frontend more personalized and secure
-
-This not only hit my goals but made the system feel more like a **real product** instead of a class project. All updates now reflect **relational logic** with no hardcoded values on the frontend.
+The project prompt allowed for a web application to demonstrate database work, so I focused on building a **robust backend** as the foundation of the application.
 
 ---
 
-## 4. Reflection
+## 2. Why did you choose this artifact? What database skills does it demonstrate?
 
-Working on this showed me how important it is to think through **relationships early**. A lot of the problems came from originally treating things like `attended`, `writtenTest`, and `drivingTest` as individual booleans. Replacing that with a proper outcome model forced me to rethink how I structure and store results.
+I chose this artifact because it showcases my ability to **design, build, and manage real database systems**, going far beyond writing basic SQL queries. It reflects thoughtful data architecture and full-cycle integration between UI and database layers.
 
-### Challenges and Lessons Learned:
-- Refactoring logic and UI to use a single `CourseOutcome` model instead of several flags
-- Making sure students and teachers are synced when enrolled or removed from courses (many-to-many bidirectional logic)
-- Updating the UI templates with Thymeleaf to show dynamic lists like enrolled/available courses, course outcomes, and upcoming appointments
-- Getting controllers to stay clean by pushing most of the logic into services and repositories
-- Making sure that every form — whether it’s an enrollment or a test result — actually stores values in the database the right way
+### Key Skills Demonstrated
 
-This taught me how to keep a system **maintainable as it grows** and how to wire up a UI to **live data** through controllers and services without cutting corners. I also got better at working with **Spring’s transaction handling**, **fetch strategies**, and how to structure **repository queries** for clean code.
+- **Entity Relationships**  
+  Used JPA annotations like `@ManyToMany` and `@OneToMany` to connect students, teachers, courses, and outcomes.
+
+- **Normalized Data Structures**  
+  Replaced scattered boolean flags with a centralized `CourseOutcome` table to track evaluation results.
+
+- **Role-Based Access Control**  
+  Implemented student/teacher-specific views and access using custom repository and service-layer logic.
+
+- **Form and Data Flow Integration**  
+  All form submissions (enrollments, outcomes, appointments) are stored in the database and reflected in real time in the UI.
+
+- **DTO and Service Layers**  
+  Introduced Data Transfer Objects (DTOs) and separated business logic from controller logic, improving maintainability.
+
+- **Test and Seed Data**  
+  Built realistic sample data for users, vehicles, courses, and appointments to allow for full end-to-end testing.
+
+These enhancements result in a **production-ready backend** suitable for a real or prototype educational management system.
+
+---
+
+## 3. Did you meet your planned goals from Module One?
+
+Yes — and I exceeded them.
+
+My original plan was to clean up a few entity relationships and improve some of the form logic. However, as I worked on the project, I realized there were deeper architectural improvements needed.
+
+###  Additional Enhancements Completed:
+
+- Built a `CourseOutcome` system to store evaluation results
+- Implemented an `Appointment` system with constraints (e.g., weekdays only, one student per course per day)
+- Improved session handling and custom login redirect logic
+- Filtered course list so students can’t re-enroll in already completed courses
+- Refactored controller logic into the service layer to improve modularity
+
+These updates resulted in a **cleaner, more maintainable, and scalable system** that better simulates real-world backend workflows.
+
+---
+
+## 4. What did you learn from working on this enhancement? What were the challenges?
+
+One major takeaway was how **early database design decisions significantly impact future flexibility and scalability**.
+
+For example:
+- Initially, course progress was tracked with simple booleans.
+- Replacing those with a full `CourseOutcome` model required **refactoring multiple services, views, and controllers**, but the final structure was much more consistent and clean.
+
+### Challenges Encountered:
+
+- **Regression**: Adding features like appointment scheduling broke course availability logic — teaching the importance of **full regression testing** after every feature update.
+- **Security Complexity**: Spring Security configuration was tricky. Handling user roles, session logic, and login redirects required **careful integration** with the rest of the application.
+- **Cross-Layer Coordination**: Making sure changes in the frontend, controller, service, and repository layers stayed in sync took **careful versioning and testing**.
+
+---
+
+## Outcome
+
+This project solidified my understanding of:
+
+- Backend development using **Spring Boot**
+- SQL and relational modeling in **MySQL**
+- Authentication and authorization with **Spring Security**
+- Clean separation of concerns using **DTOs** and **Service layers**
+- Real-world system simulation and UI↔DB communication
+
+It also reinforced the importance of designing systems that are **modular, testable, and easy to evolve** as needs change.
+
+---
+
+## Design Screenshots
+
+- **Figure 1**: Login Page and Registration Link  
+- **Figure 2**: Registration Page  
+- **Figure 3**: Admin Page with CRUD Operations  
+- **Figure 4**: Teacher Page  
+- **Figure 5**: Student Page with Scheduling and Enrollment
+

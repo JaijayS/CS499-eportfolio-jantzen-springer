@@ -7,19 +7,19 @@ Welcome to my Computer Science Capstone ePortfolio. This repository presents key
 
 ## 📂 Portfolio Contents
 
-### 🧭 Professional Self-Assessment  
+### 🧭 [Professional Self-Assessment](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/blob/main/self-assessment.md)
 A reflective overview of how this program has shaped my technical growth, influenced my professional values, and prepared me for opportunities in software development.
 
-### 🎬 Code Review Video  
+### 🎬 [Code Review Video](video link)  
 A walkthrough of one of my enhanced artifacts, providing insight into design decisions, improvements made, and the overall quality of the implementation.
 
-### 🧱 Software Engineering Artifact  
+### 🧱 [Software Engineering Artifact](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/tree/main/software)  
 An upgraded Java-based Robot Game project that showcases object-oriented design, logic flow, and interactive gameplay. Enhancements focused on user input handling, state management, and scalability.
 
-### ⚙️ Algorithms & Data Structures Artifact  
+### ⚙️ [Algorithms & Data Structures Artifact](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/tree/main/algorithms)
 A refactored C++ Course Planner application that integrates a custom hash table and a QuickSort implementation. This artifact demonstrates efficient data storage and sorting algorithm design.
 
-### 🗄️ Database Artifact  
+### 🗄️ [Database Artifact](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/tree/main/database)
 A full-stack Spring Boot web application featuring user roles (Admin, Student, Teacher), appointment scheduling, and MySQL database integration. Focused on clean architecture, real-world usability, and secure access control.
 
 ---
@@ -33,7 +33,3 @@ A full-stack Spring Boot web application featuring user roles (Admin, Student, T
 - **Concepts:** RESTful APIs, OOP, sorting/search algorithms, relational data modeling, authentication
 
 ---
-
-## 💡 About This Portfolio
-
-This portfolio is more than a set of projects—it's a curated collection of enhanced work that reflects both what I’ve learned and how I approach software development. Each enhancement was made to improve structure, efficiency, usability, or maintainability. The end result is a professional showcase of my capabilities and readiness to contribute to real-world engineering teams.

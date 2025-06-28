@@ -1,103 +1,97 @@
-# Enhancement Two: Algorithms and Data Structures
+# Course Planner – Algorithms and Data Structure Enhancement
+
+## 1. Briefly describe the artifact. What is it? When was it created?
+
+This artifact differs from the previous one but aligns much better with the focus of algorithms and data structures. The project is a Course Planner application originally written in a single C++ source file. It was developed to load and manage course data for a university advising system, including support for prerequisites and course searching.
+
+As part of the enhancement, the code was refactored to better demonstrate algorithmic design and data structure usage. I:
+- Modularized the code
+- Implemented a custom hash table to store course information
+- Replaced the default `std::sort` with a custom QuickSort algorithm
+
+The original version relied on the C++ Standard Library’s `std::sort`, which internally uses a hybrid sorting algorithm (QuickSort, HeapSort, and InsertionSort) [GeeksforGeeks, 2022]. My enhancements provided better performance control, deeper understanding, and clearer presentation of how data is processed.
 
 ---
 
-## 📦 Clock Application
+## 2. Why did you choose this artifact?
 
-### 1. Artifact Overview
+I included this artifact because it demonstrates my ability to design, implement, and evaluate custom algorithmic solutions. It reflects my growth in structuring efficient systems using foundational data structures and shows clear evidence of strategic problem-solving.
 
-The **Clock application** was initially a **C++ program** created in **Spring 2023** that displays the current time in both 12-hour and 24-hour formats. In the console, a user could add time (seconds, minutes, hours) and it would update accordingly.
+Key Components and Improvements:
+- Custom Hash Map: Built from scratch using chaining for collision handling to store course records efficiently.
+- QuickSort Algorithm: Implemented manually to sort courses by ID, title, or teacher—replacing reliance on STL sort.
+- CSV Parsing Improvements: Expanded logic to read multiple prerequisites and instructor names from structured data.
+- Dynamic CLI Output: Cleanly formatted output for improved usability and better communication of results.
 
-The enhanced version is a **JavaFX GUI application** featuring **start, stop, and reset controls** to manage the clock display. It was developed as a project to demonstrate **GUI programming** combined with **time-based algorithms**.
-
----
-
-### 2. Justification for Inclusion
-
-I selected this project because it highlights my ability to **refactor old, unstructured code** and apply more logical **data structures, algorithms, and event-driven flow**.
-
-Key improvements include:
-- Implementing **event-driven programming** and **JavaFX GUI**
-- Adding **Timeline-based animation** to keep the clock ticking accurately
-- Using **Java date/time APIs** and separating UI logic from business logic
-- Implementing **asynchronous updates** and encapsulating state (hour, minute, second)
-
-This project showcases my skills in:
-- Real-time logic and algorithm design
-- Synchronizing internal state with visual UI elements
-- Object-oriented design principles with GUI architecture
+Through this enhancement, I applied algorithmic thinking and hands-on development to simulate a system that supports real-world advising workflows.
 
 ---
 
-### 3. Outcome Alignment
+## 3. Did you meet your planned goals from Module One?
 
-Yes, I met and extended the outcomes planned in Module One.
+Yes — and I enhanced the project significantly beyond my initial plan.
 
-- The original **C++ implementation** demonstrated procedural logic and algorithm use for incrementing and displaying time.
-- The **Java version** reimagined the application with a **tabbed interface** (clock and calculator), **event handlers**, and **Java collections/layouts** like `VBox`/`HBox`.
+Updates and Enhancements:
+- Refactored the original monolithic `.cpp` into modular files (`main.cpp`, `HashMap.h/cpp`, `Sort.h/cpp`)
+- Designed reusable Sort class and implemented abstraction for sorting by various fields
+- Manually implemented recursive QuickSort, managing edge cases and testing performance
+- Built comparison logic for complex course records (multiple instructors/prerequisites)
+- Enhanced terminal output formatting for alignment and readability
+- Incorporated peer feedback and iterative testing for refinement
 
-This transition reflects growth from **procedural** to **object-oriented design**, with more focus on usability and responsiveness.
-
----
-
-### 4. Reflection
-
-Creating the Clock application helped me:
-- Understand **JavaFX’s event model**
-- Learn about **thread-safe UI updates**
-- Use **Timeline** for real-time animation and accurate time tracking
-
-One key challenge was maintaining accurate state over time and reflecting that state live in the UI. This process improved my understanding of separating concerns between UI components and logic layers.
+These enhancements improved clarity, performance, scalability, and user control, while directly showcasing my understanding of data structures and algorithm design.
 
 ---
 
-## ➗ Calculator Application
+## 4. Reflection: What did you learn and what were the challenges?
 
-### 1. Artifact Overview
+Enhancing this artifact taught me about the importance of modularity and abstraction in algorithm-heavy applications.
 
-The **Calculator application** is a **Java console program** created in **2023** that performs basic arithmetic operations: **addition, subtraction, multiplication, and division**.
+Lessons Learned:
+- Deepened my understanding of recursive logic, especially in QuickSort
+- Learned to balance performance, maintainability, and readability
+- Experienced the trade-offs of custom implementations vs. standard libraries
 
-It focuses on core **algorithmic logic** and **expression evaluation**, demonstrating mastery of **control structures**, **operator precedence**, and **numeric input handling**. The project was originally written in **C++**.
+Challenges Faced:
+- Managing multi-field comparison logic with non-uniform data (e.g., multiple instructors)
+- Preventing regressions in output formatting while refactoring display code
+- Debugging recursive partitioning and pointer handling in QuickSort
+- Designing a flexible sorting interface while maintaining clean code separation
 
----
+This project allowed me to design and evaluate a computing solution that uses algorithmic principles and clean architecture. It’s scalable, fast, and effective for supporting decision-making in a course planning context.
 
-### 2. Justification for Inclusion
-
-I selected this project because it demonstrates my understanding of **algorithm design**, **expression parsing**, and applying **data structures** across languages.
-
-The original C++ version focused on:
-- **Formatted financial output**
-- **Looping and control flow**
-- **Function decomposition**
-
-The Java version improved on this by:
-- Abstracting the arithmetic logic into separate methods
-- Improving flexibility and modularity
-- Preparing for future GUI support
-
-This reflects my ability to improve code structure and logic scalability.
+Although security wasn’t a focus here, I acknowledge that data validation and error handling are essential in real-world systems. Future improvements would include better input sanitation and defensive programming techniques.
 
 ---
 
-### 3. Outcome Alignment
+## Project Files Overview
 
-Yes, this enhancement met my algorithm/data structure goals.
+| File           | Description |
+|----------------|-------------|
+| `Main.cpp`     | Main program handling UI and logic |
+| `Course.h`     | Defines Course struct: ID, title, prerequisites |
+| `HashMap.h`    | HashMap interface for insert/search/print |
+| `HashMap.cpp`  | Hashing and collision handling logic |
+| `Courses.csv`  | Source course data with prerequisites and teachers |
+| `Sort.h`       | Sorting interface for ID, title, or teacher |
+| `Sort.cpp`     | QuickSort implementation with field comparison logic |
 
-- Implemented expression parsing and clean control flow
-- Abstracted operations for maintainability
-- Applied best practices in Java for input handling and arithmetic logic
+---
 
-I plan to extend this with **recursive algorithms**, **more advanced expressions**, and **a simple UI** to increase usability and robustness.
+## Enhancement Log
+
+| # | Change Description              | Impact                                           |
+|---|--------------------------------|--------------------------------------------------|
+| 1 | Modularized Code Structure     | Improved maintainability, readability, scalability |
+| 2 | Added teacher support          | Enhanced realism of data                         |
+| 3 | Implemented custom sort algo   | Reduced reliance on STL, improved learning       |
+| 4 | Dynamic sorting options        | Gave user more control over presentation         |
+| 5 | Reformatted console output     | Improved user experience                         |
+| 6 | Improved CSV parser            | Increased flexibility and real-world compatibility |
 
 ---
 
-### 4. Reflection
+## References
 
-This project reinforced my understanding of:
-- Designing algorithms for numeric calculation
-- Choosing appropriate data types and control structures
-- Translating logic from C++ to Java in a modular, reusable way
-
-I faced challenges ensuring consistent operator precedence and formatting output, especially when adapting the code across languages. It helped me develop cleaner patterns for evaluating input and handling errors.
-
----
+GeeksforGeeks. (2022, December 22). Introsort - C++’s sorting weapon.  
+https://www.geeksforgeeks.org/dsa/introsort-cs-sorting-weapon/

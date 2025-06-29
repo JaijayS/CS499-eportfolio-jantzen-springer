@@ -1,4 +1,4 @@
 
-# Algorithms: CS 260-Airgead Banking.
+# Algorithms: ABCU Course.
 
- [ Airgead Banking](https://github.com/JaijayS/CS210_Project2-)
+ [ABCU](https://github.com/JaijayS/CS-300-DSA-Analysis-and-Design)

@@ -102,9 +102,23 @@ It also reinforced the importance of designing systems that are **modular, testa
 
 ## Design Screenshots
 
-- **Figure 1**: Login Page and Registration Link  
-- **Figure 2**: Registration Page  
-- **Figure 3**: Admin Page with CRUD Operations  
-- **Figure 4**: Teacher Page  
-- **Figure 5**: Student Page with Scheduling and Enrollment
+ **Login Page**:
+ 
+ ![Login Page](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/blob/main/images/driver-pass-login-page.png)
+ 
+ **Registration Page**:
+ 
+![Registration Page](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/blob/main/images/driver-pass-registration-page.png)
+
+ **Admin Page**:
+ 
+![Admin Page with CRUD Operations](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/blob/main/images/driver-pass-admin-page.png) 
+
+ **Teacher Page**:
+ 
+ ![Teacher Page](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/blob/main/images/driverpass-teacher-page.png)
+ 
+ **Student Page**:
+ 
+ ![Student Page with Scheduling and Enrollment](https://github.com/user-attachments/assets/357bcace-9c08-4dd5-9ce4-b5bc4cafc4fe)
 

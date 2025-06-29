@@ -1,5 +1,8 @@
 # Enhancement One: Software Design/Engineering
 
+Original artifact:
+Enhanced: artifact: 
+
 ## 1. Artifact Overview
 
 The artifact is different than previously mentioned but provides much better alignment to the Milestone 2 enhancement. **TextBasedGame** was originally written in **Python**. It has now been reformatted into the **Java programming language**, showcasing improved software design principles. The original program had no clear structure and consisted of a single `.py` file.

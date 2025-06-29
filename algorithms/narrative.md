@@ -1,5 +1,10 @@
 # Course Planner – Algorithms and Data Structure Enhancement
 
+Original:
+
+Enhanced: https://github.com/JaijayS/cs499-enhanced-algorithms
+
+
 ## 1. Briefly describe the artifact. What is it? When was it created?
 
 This artifact differs from the previous one but aligns much better with the focus of algorithms and data structures. The project is a Course Planner application originally written in a single C++ source file. It was developed to load and manage course data for a university advising system, including support for prerequisites and course searching.

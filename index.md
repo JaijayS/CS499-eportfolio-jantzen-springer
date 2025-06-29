@@ -13,13 +13,13 @@ A reflective overview of how this program has shaped my technical growth, influe
 ### [Code Review Video](code-review.md)  
 A walkthrough of each project’s goals and planned enhancements, with commentary on design choices and expected improvements.
 
-### [Software Engineering Artifact](software/README.md)  
+### [Software Engineering Artifact](software/narrative.md)  
 An animal-themed text-based game implemented in Python. Planned enhancements include modular code design, item collection logic, win conditions, and cleaner input handling.
 
-### [Algorithms & Data Structures Artifact](algorithms/README.md)  
+### [Algorithms & Data Structures Artifact](algorithms/narrative.md)  
 A C++ course planner application that reads data from a CSV and uses a hash table for storage. Planned updates include implementing a custom quicksort, benchmarking alternative data structures, and modularizing the code.
 
-### [Database Artifact](database/README.md)  
+### [Database Artifact](database/narrative.md)  
 A full-stack Spring Boot web application modeled after the original DriverPass business document. This application will include user roles (Admin, Student, Teacher), appointment scheduling, vehicle management, and secure MySQL database integration.
 
 ---

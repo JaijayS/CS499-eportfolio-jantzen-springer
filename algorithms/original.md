@@ -1,4 +1,4 @@
 
-# Algorithms: ABCU Course.
+# Algorithms: ABCU Advising
 
- [ABCU](https://github.com/JaijayS/CS-300-DSA-Analysis-and-Design)
+ [ABCU Advising](https://github.com/JaijayS/CS-300-DSA-Analysis-and-Design)

@@ -10,7 +10,7 @@ Welcome to my Computer Science Capstone ePortfolio. This repository presents key
 ### 🧭 [Professional Self-Assessment](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/blob/main/self-assessment.md)
 A reflective overview of how this program has shaped my technical growth, influenced my professional values, and prepared me for opportunities in software development.
 
-### 🎬 [Code Review Video](video link)  
+### 🎬 [Code Review Video](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/tree/main/Enhancment%20Video)  
 A walkthrough of one of my enhanced artifacts, providing insight into design decisions, improvements made, and the overall quality of the implementation.
 
 ### 🧱 [Software Engineering Artifact](https://github.com/JaijayS/CS499-eportfolio-jantzen-springer/tree/main/software)  

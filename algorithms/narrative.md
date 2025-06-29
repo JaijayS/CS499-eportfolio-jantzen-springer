@@ -1,6 +1,6 @@
 # Course Planner – Algorithms and Data Structure Enhancement
 
-Original:
+Original: https://github.com/JaijayS/CS-300-DSA-Analysis-and-Design
 
 Enhanced: https://github.com/JaijayS/cs499-enhanced-algorithms
 

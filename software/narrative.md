@@ -1,6 +1,6 @@
 # Enhancement One: Software Design/Engineering
 
-Original artifact: 
+Original artifact: https://github.com/JaijayS/TextBasedGame
 
 Enhanced: artifact: https://github.com/JaijayS/cs499-enhanced-software
 

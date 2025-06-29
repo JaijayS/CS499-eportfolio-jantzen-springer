@@ -2,7 +2,7 @@
 
 In this code review video, I outline the purpose of each original artifact and walk through the specific enhancements I plan to make to improve structure, usability, and overall software quality. Each project is linked below.
 
-Please follow this youtube link for the code-review video: [Youtube](https://studio.youtube.com/video/zfZ5sKBkdh0/edit)
+Please follow this youtube link for the code-review video: [Youtube]((https://youtu.be/zfZ5sKBkdh0 )
 
 ## Project Artifacts & Expected Enhancements
 

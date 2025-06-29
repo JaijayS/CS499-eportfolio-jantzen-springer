@@ -1,7 +1,8 @@
 # Enhancement One: Software Design/Engineering
 
-Original artifact:
-Enhanced: artifact: 
+Original artifact: 
+
+Enhanced: artifact: https://github.com/JaijayS/cs499-enhanced-software
 
 ## 1. Artifact Overview
 

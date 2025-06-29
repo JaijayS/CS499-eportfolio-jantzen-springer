@@ -10,7 +10,7 @@ Welcome to my Computer Science Capstone ePortfolio. This repository presents key
 ### [Professional Self-Assessment](self-assessment.md)  
 A reflective overview of how this program has shaped my technical growth, influenced my professional values, and prepared me for opportunities in software development.
 
-### [Code Review Video](enhancement-video.md)  
+### [Code Review Video](enhancement-video/enhancement-video.md)  
 A walkthrough of each project’s goals and planned enhancements, with commentary on design choices and expected improvements.
 
 ### [Software Engineering Artifact](software/narrative.md)  
